@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <style media="screen">
+      .dropup{
+        margin-top: 200px;
+      }
+    </style>
   </head>
   <body>
     <div class="dropdown">
@@ -17,11 +22,26 @@
         下拉菜单
         <span class="caret"></span>
       </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+      <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
         <li><a href="#">Action</a></li>
         <li><a href="#">Another action</a></li>
         <li><a href="#">Something else here</a></li>
         <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="dropup">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        上拉菜单
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-lablledby="dropddownMenu2">
+        <li class="dropdown-header">your skills</li>
+        <li>Android</li>
+        <li class="disabled"><a href="#">Java</a></li>
+        <li>Web</li>
+        <li class="divider" role="separator"></li>
+        <li class="dropdown-header">footer</li>
       </ul>
     </div>
   </body>
